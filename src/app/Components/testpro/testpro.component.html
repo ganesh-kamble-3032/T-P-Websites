@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Training & Placement</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+
+  <!-- Top Blue Bar -->
+  <div class="top-bar d-flex justify-content-between align-items-center px-3 py-2 bg-primary text-white">
+    <div class="top-bar-left d-flex gap-3 align-items-center">
+      <span><i class="fas fa-phone"></i> 89830-12051/52</span>
+      <a href="#" class="text-white" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="text-white" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="text-white" aria-label="Google Play"><i class="fab fa-google-play"></i></a>
+      <a href="#" class="text-white" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      <a href="mailto:info@example.com" class="text-white" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+    <div class="top-bar-right">
+      <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#enquiryModal">
+        <i class="fas fa-envelope-open-text"></i> Enquiry
+      </a>
+    </div>
+    <!-- ENQUIRY MODAL -->
+    <div class="modal fade" id="enquiryModal" tabindex="-1" aria-labelledby="enquiryModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content glass-card border-0 rounded-4 shadow-lg">
+          <div class="modal-header border-0">
+            <h5 class="modal-title fw-bold text-primary" id="enquiryModalLabel">Send Enquiry</h5>
+            <button type="button" class="btn-close shadow-sm" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control form-control-lg" id="name" placeholder="Write Full Name...">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="qualification" class="form-label">Qualification</label>
+                  <input type="text" class="form-control form-control-lg" id="qualification"
+                    placeholder="BE, B.Tech, etc.">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="mobile" class="form-label">Mobile No.</label>
+                  <input type="tel" class="form-control form-control-lg" id="mobile" placeholder="Enter Mobile Number">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="course" class="form-label">Course</label>
+                  <input type="text" class="form-control form-control-lg" id="course"
+                    placeholder="Full Stack Java Developer">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control form-control-lg" id="email"
+                    placeholder="Your Email Address...">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="city" class="form-label">City</label>
+                  <select id="city" class="form-select form-select-lg">
+                    <option selected>Select</option>
+                    <option value="Solapur">Solapur</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Mumbai">Mumbai</option>
+                  </select>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="branch" class="form-label">Branch</label>
+                  <select id="branch" class="form-select form-select-lg">
+                    <option selected>Select City First</option>
+                    <option value="Main Branch">Main Branch</option>
+                    <option value="Sub Branch">Sub Branch</option>
+                  </select>
+                </div>
+
+                <div class="col-12">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control form-control-lg" id="message" rows="4"
+                    placeholder="Write your message..."></textarea>
+                </div>
+
+                <div class="col-12 text-center mt-4">
+                  <button type="submit" class="btn btn-primary btn-lg px-5 rounded-pill shadow-sm">
+                    <i class="fas fa-paper-plane me-2"></i>Send Enquiry
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Main Header -->
+  <header class="main-header py-3 border-bottom bg-white">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="logo">
+        <a href="#">
+          <img src="assets/images/logo.png" alt="Training & Placement Logo" style="height: 50px;" />
+        </a>
+      </div>
+      <nav class="main-nav">
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link active" href="/home">Home</a></li>
+          <li class="nav-item dropdown position-static">
+            <a class="nav-link dropdown-toggle fw-semibold" href="#" id="coursesDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Courses
+            </a>
+
+            <div class="dropdown-menu mega-dropdown shadow-lg border-0 p-4 mt-2 animate__animated animate__fadeIn"
+              aria-labelledby="coursesDropdown">
+              <div class="container-fluid">
+                <div class="row g-4">
+
+                  <!-- Column 1 -->
+                  <div class="col-md-4">
+                    <h6 class="mega-title">100% Job Assurance</h6>
+                    <a class="mega-link" href="/xpro">xPro - Full Stack Dev with AI</a>
+                    <a class="mega-link" href="/testpro">testPro - Automation Testing</a>
+
+                    <h6 class="mega-title mt-4">Master Diploma (6 Months)</h6>
+                    <a class="mega-link" href="/javafullstack">Java Full Stack</a>
+                    <a class="mega-link" href="/dotnet">.Net Full Stack</a>
+                    <a class="mega-link" href="/softwaretesting">Software Testing</a>
+                    <a class="mega-link" href="pdac">P-DAC</a>
+                  </div>
+
+                  <!-- Column 2 -->
+                  <div class="col-md-4">
+                    <h6 class="mega-title">Advanced Diploma (4 Months)</h6>
+                    <a class="mega-link" href="pythonfullstack">Python Full Stack</a>
+                    <a class="mega-link" href="javafullstack">Java Full Stack</a>
+                    <a class="mega-link" href="/dotnet">Dot Net Full Stack</a>
+
+                    <h6 class="mega-title mt-4">Diploma (2 Months)</h6>
+                    <a class="mega-link" href="/uiuxdesign">UI/UX Design</a>
+                    <a class="mega-link" href="datascience">Data Science</a>
+                    <a class="mega-link" href="php">PHP</a>
+                    <a class="mega-link" href="/salesforce">Salesforce</a>
+                  </div>
+
+                  <!-- Column 3 -->
+                  <div class="col-md-4">
+                    <h6 class="mega-title">Short Term Courses</h6>
+                    <a class="mega-link" href="cc">C / C++</a>
+                    <a class="mega-link" href="corejava">Core Java</a>
+                    <a class="mega-link" href="/htmlcssbootstrap">HTML / CSS / Bootstrap</a>
+                    <a class="mega-link" href="/angularreact">Angular / React</a>
+                    <a class="mega-link" href="aws">AWS / DevOps</a>
+                    <a class="mega-link" href="/powerbi">Power BI</a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="/service">Services</a></li>
+          <li class="nav-item dropdown position-relative">
+            <a class="nav-link dropdown-toggle fw-semibold" href="#" id="placementsDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Placements
+            </a>
+            <ul class="dropdown-menu placements-dropdown shadow border-0 mt-2 animate__animated animate__fadeIn"
+              aria-labelledby="placementsDropdown">
+              <li><a class="dropdown-item" href="/overview">Overview</a></li>
+              <!-- <li><a class="dropdown-item" href="#">Placed Students</a></li> -->
+              <li><a class="dropdown-item" href="/fec">Fresher Employment Center</a></li>
+              <li><a class="dropdown-item" href="/our-clients">Our Clients</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="/about">About Us</a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="#">Testimonials</a></li> -->
+          <li class="nav-item"><a class="nav-link" href="/contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!--  -->
+  <section class="course-container">
+    <div class="course-header">
+      <h2 class="course-title">TestPro - Software Automation Testing with AI</h2>
+      <p class="course-subtitle">(100% Job Assured Program with Offer Letter on Day 1)</p>
+    </div>
+
+    <div class="course-info">
+      <p><strong>Eligibility:</strong> BE | BTech | MCA | MCS | MCM | MSc | BCA | BCS | BSc etc</p>
+      <p><strong>Passout Year:</strong> 2022 / 2023 / 2024 / 2025</p>
+      <p><strong>Aggregate:</strong> 55% in 10th, 12th, Degree, PG</p>
+      <p><strong>Pre-requisite:</strong> Basic Knowledge of C Programming</p>
+      <p><strong>Duration:</strong> 6 Months Full Time</p>
+    </div>
+
+    <h3 class="modules-title">Course Curriculum</h3>
+
+    <div class="accordion-container">
+      <!-- Module 1 -->
+      <div class="accordion-item">
+        <button class="accordion-header">Module 1 - Programming Fundamentals</button>
+        <div class="accordion-body">
+          <div class="accordion-content">
+            <ul>
+              <li>Introduction to OS & Networking</li>
+              <li>Overview of Operating System</li>
+              <li>Concept of Process and Thread</li>
+              <li>Memory Management</li>
+              <li>Network Basics</li>
+              <li>Classification of Networks</li>
+              <li>Network Topologies</li>
+              <li>Network Communication and Protocols</li>
+              <li>TCP/IP fundamentals</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Module 2 -->
+      <div class="accordion-item">
+        <button class="accordion-header">Module 2 - Web Fundamentals</button>
+        <div class="accordion-body">
+          <div class="accordion-content">
+            <ul>
+              <li>HTML Basics: Structure, Elements and Attributes</li>
+              <li>Various Input fields in HTML</li>
+              <li>Tables, Frames, Lists, Layouts</li>
+              <li>Fonts, Colors</li>
+              <li>Images</li>
+              <li>HTML Forms</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Module 3 -->
+      <div class="accordion-item">
+        <button class="accordion-header">Module 3 - Software Testing</button>
+        <div class="accordion-body">
+          <div class="accordion-content">
+            <ul>
+              <li>Introduction to Software Applications</li>
+              <li>What is Software Application</li>
+              <li>Types of Software Applications</li>
+              <li>Components of Software</li>
+              <li>One Tier / Two Tier / Three Tier / Multi Tier Architecture</li>
+              <li>Application Domains</li>
+              <li>Application Models</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Module 4 -->
+      <div class="accordion-item">
+        <button class="accordion-header">Module 4 - Automation Testing</button>
+        <div class="accordion-body">
+          <div class="accordion-content">
+            <ul>
+              <li>Introduction to .Net Framework & Architecture</li>
+              <li>Visual Studio Overview, Language Basics</li>
+              <li>OOPs Concepts – Class, Object, Properties, Methods</li>
+              <li>Encapsulation, Abstraction, Inheritance, Polymorphism</li>
+              <li>Access Modifiers, Constructors, Indexers</li>
+              <li>Abstract Class & Interface (Implicit/Explicit)</li>
+              <li>Exception Handling</li>
+              <li>Win Forms, Collections, File IO, Reflection</li>
+              <li>Events, Delegates, Multi-Threading</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Module 5 -->
+      <div class="accordion-item">
+        <button class="accordion-header">Module 5 - DevOps</button>
+        <div class="accordion-body">
+          <div class="accordion-content">
+            <ul>
+              <li>Overview of Linux and Architecture</li>
+              <li>Linux Distributions & File System</li>
+              <li>Basic Linux Commands</li>
+              <li>File Permission Management</li>
+              <li>User Creation, Shell Scripts</li>
+              <li>SSH and VI Utility</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Module 6 -->
+      <div class="accordion-item">
+        <button class="accordion-header">Module 6 - Mobile Testing Process</button>
+        <div class="accordion-body">
+          <div class="accordion-content">
+            <ul>
+              <li>What is Maven? Why use it?</li>
+              <li>Setting up and Configuring Maven</li>
+              <li>Running Test Scripts from Maven</li>
+              <li>TestNG Integration with Maven</li>
+              <li>POM.xml Structure and Customization</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Module 7 -->
+      <div class="accordion-item">
+        <button class="accordion-header">Module 7 - AI-Powered Test Design and Development</button>
+        <div class="accordion-body">
+          <div class="accordion-content">
+            <ul>
+              <li>Generating Test Scenarios with AI</li>
+              <li>AI-Assisted Test Case Generation</li>
+              <li>Improving Test Effectiveness using AI</li>
+              <li>Intelligent Test Data Generation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Module 8 -->
+      <div class="accordion-item">
+        <button class="accordion-header">Module 8 - Interview Preparation</button>
+        <div class="accordion-body">
+          <div class="accordion-content">
+            <ul>
+              <li>Technical Assignments</li>
+              <li>Technical Test Preparation</li>
+              <li>Technical Mock Interviews</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="add-ons">
+      <h3>Additional Career Guidance</h3>
+      <ul>
+        <li>Experts guidance on Resume Building to highlight key achievements</li>
+        <li>LinkedIn Profile creation & Training</li>
+        <li>Web Portfolio building to effectively showcase projects</li>
+      </ul>
+    </div>
+  </section>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    .course-container {
+      max-width: 900px;
+      margin: 40px auto;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+    }
+
+    .course-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .course-title {
+      color: #2d3748;
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+
+    .course-subtitle {
+      color: #4776E6;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .course-info {
+      background-color: #f8fafc;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-left: 4px solid #4776E6;
+    }
+
+    .course-info p {
+      margin-bottom: 10px;
+    }
+
+    .course-info p:last-child {
+      margin-bottom: 0;
+    }
+
+    .course-info strong {
+      color: #4776E6;
+    }
+
+    .modules-title {
+      text-align: center;
+      margin: 30px 0 20px;
+      color: #2d3748;
+      font-size: 22px;
+    }
+
+    .accordion-item {
+      margin-bottom: 15px;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid #e2e8f0;
+    }
+
+    .accordion-header {
+      width: 100%;
+      padding: 15px 20px;
+      background-color: #f8fafc;
+      border: none;
+      text-align: left;
+      font-size: 16px;
+      font-weight: 600;
+      color: #2d3748;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .accordion-header:hover {
+      background-color: #edf2f7;
+    }
+
+    .accordion-header::after {
+      content: "+";
+      position: absolute;
+      right: 20px;
+      font-size: 20px;
+      color: #4776E6;
+    }
+
+    .accordion-header.active {
+      background-color: #edf2f7;
+    }
+
+    .accordion-header.active::after {
+      content: "-";
+    }
+
+    .accordion-body {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+
+    .accordion-content {
+      padding: 0 20px 15px;
+    }
+
+    .accordion-content ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    .accordion-content li {
+      margin-bottom: 8px;
+    }
+
+    .add-ons {
+      background-color: #4776E6;
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 30px;
+    }
+
+    .add-ons h3 {
+      margin-bottom: 15px;
+      font-size: 20px;
+    }
+
+    .add-ons ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .add-ons li {
+      margin-bottom: 10px;
+      padding-left: 25px;
+      position: relative;
+    }
+
+    .add-ons li:before {
+      content: "✅";
+      position: absolute;
+      left: 0;
+    }
+  </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get all accordion headers
+      const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+      // Add click event to each header
+      accordionHeaders.forEach(function (header) {
+        header.addEventListener('click', function () {
+          // Toggle active class on this header
+          this.classList.toggle('active');
+
+          // Get the accordion body that belongs to this header
+          const accordionBody = this.nextElementSibling;
+
+          // If the accordion is now active, show its content
+          if (this.classList.contains('active')) {
+            accordionBody.style.maxHeight = accordionBody.scrollHeight + "px";
+          } else {
+            // Otherwise, hide it
+            accordionBody.style.maxHeight = "0";
+          }
+        });
+      });
+
+      // Open the first accordion by default
+      if (accordionHeaders.length > 0) {
+        accordionHeaders[0].click();
+      }
+    });
+  </script>
+  <!-- Footer -->
+  <footer id="footer" class="footer dark-theme">
+    <div class="container">
+      <!-- Main Footer Content -->
+      <div class="row g-4">
+        <!-- Contact Info Column -->
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-contact">
+            <h3 class="footer-heading">
+              <a href="index.html" class="logo d-flex align-items-center">
+                <span class="sitename">CONTACT US</span>
+              </a>
+            </h3>
+            <address class="mt-3">
+              <p><i class="bi bi-geo-alt" aria-hidden="true"></i> Training & Placements 4th floor, S.M. Tower,Karve
+                Nagar. Opp Karve Nagar Bus Stand Pune (M.H) - 411052.</p><br>
+              <p><i class="bi bi-telephone" aria-hidden="true"></i> <strong>Phone: </strong> <a
+                  href="tel:+919271271636"> +91 9271271636</a></p>
+              <p><i class="bi bi-envelope" aria-hidden="true"></i> <strong>Email: </strong> <a
+                  href="mailto:hr@kumarsolutions.co.in">{{ 'hr@kumarsolutions.co.in' }}</a></p>
+            </address>
+          </div>
+        </div>
+        <!-- Useful Links Column -->
+        <div class="col-lg-2 col-md-3">
+          <div class="footer-links">
+            <h3 class="footer-heading">USEFUL LINKS</h3>
+            <ul class="list-unstyled">
+              <li><a href="/home">Home</a></li>
+              <li><a href="/alliances">Alliances</a></li>
+              <li><a href="/service">Services</a></li>
+              <li><a href="/privacy">Privacy Policy</a></li>
+              <li><a href="/disclaimer">Disclaimer Policy</a></li>
+
+            </ul>
+          </div>
+        </div>
+        <!-- Services Column -->
+        <div class="col-lg-2 col-md-3">
+          <div class="footer-links">
+            <h3 class="footer-heading">OUR SERVICES</h3>
+            <ul class="list-unstyled">
+              <li><a href="/service">College Training</a></li>
+              <li><a href="/service">Corporates</a></li>
+              <li><a href="/service">Consulting</a></li>
+              <li><a href="/service">Staffing</a></li>
+              <li><a href="/service">Testing</a></li>
+              <li><a href="/service">Career Counseling</a></li>
+
+            </ul>
+          </div>
+        </div>
+        <!-- About Company & Newsletter Column -->
+        <div class="col-lg-4 col-md-12">
+          <div class="footer-newsletter">
+            <h3 class="footer-heading">ABOUT Training & Placements</h3>
+            <p>The major operations of the company are held in Pune. We believe in providing high quality, cost
+              effective solutions to clients PAN INDIA.</p>
+            <div class="social-links mt-3">
+              <a href="https://www.facebook.com/people/KumarSolutions/100064100643146/" target="_blank"
+                rel="noopener noreferrer" aria-label="Facebook">
+                <i class="fab fa-facebook-f" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/kumar-solutions-b2128535/" target="_blank" rel="noopener noreferrer"
+                aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Copyright Section -->
+    <div class="container mt-5">
+      <div class="copyright text-center py-3">
+        <p>&copy; 2014-<span id="current-year"></span>Training & Placements. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- ✅ Bootstrap JS (with Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Chat Bot Button -->
+  <div class="chatbot-container" onclick="toggleChat()">
+    <div class="chat-notification">1</div>
+    <div class="chat-bubble">
+      <div class="chat-label">LET’S CHAT!</div>
+      <div class="chat-icon">
+        <i class="fas fa-comment-dots"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- Chat Window -->
+  <div class="chat-window" id="chatWindow">
+    <div class="chat-header">💬 Support Bot</div>
+    <div class="chat-body">
+      <p>Hi there! How can I assist you today?</p>
+    </div>
+    <div class="chat-footer">
+      <input type="text" placeholder="Type a message..." />
+      <button>Send</button>
+    </div>
+  </div>
+
+  <!-- Font Awesome CDN (Icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Chatbot Styles -->
+  <style>
+    .chatbot-container {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      cursor: pointer;
+      z-index: 9999;
+    }
+
+    .chat-notification {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      background: #d62828;
+      color: #fff;
+      font-size: 12px;
+      font-weight: bold;
+      border-radius: 50%;
+      padding: 3px 6px;
+    }
+
+    .chat-bubble {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      background: #000;
+      color: white;
+      border-radius: 20px;
+      padding: 10px 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .chat-bubble:hover {
+      transform: scale(1.05);
+    }
+
+    .chat-label {
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .chat-icon {
+      background: #005eff;
+      color: white;
+      border-radius: 50%;
+      padding: 10px;
+      font-size: 18px;
+    }
+
+    .chat-window {
+      display: none;
+      position: fixed;
+      bottom: 90px;
+      right: 30px;
+      width: 300px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      z-index: 9999;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    .chat-header {
+      background: #005eff;
+      color: white;
+      padding: 10px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .chat-body {
+      padding: 15px;
+      font-size: 14px;
+      height: 150px;
+      overflow-y: auto;
+    }
+
+    .chat-footer {
+      display: flex;
+      border-top: 1px solid #ccc;
+    }
+
+    .chat-footer input {
+      flex: 1;
+      border: none;
+      padding: 10px;
+      outline: none;
+    }
+
+    .chat-footer button {
+      background: #005eff;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+
+  <!-- Chat Toggle Script -->
+  <script>
+    function toggleChat() {
+      const chatWindow = document.getElementById("chatWindow");
+      chatWindow.style.display =
+        chatWindow.style.display === "block" ? "none" : "block";
+    }
+  </script>
+
+</body>

@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Training & Placement</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+
+  <!-- Top Blue Bar -->
+  <div class="top-bar d-flex justify-content-between align-items-center px-3 py-2 bg-primary text-white">
+    <div class="top-bar-left d-flex gap-3 align-items-center">
+      <span><i class="fas fa-phone"></i> 89830-12051/52</span>
+      <a href="#" class="text-white" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="text-white" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="text-white" aria-label="Google Play"><i class="fab fa-google-play"></i></a>
+      <a href="#" class="text-white" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      <a href="mailto:info@example.com" class="text-white" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+    <div class="top-bar-right">
+      <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#enquiryModal">
+        <i class="fas fa-envelope-open-text"></i> Enquiry
+      </a>
+    </div>
+    <!-- ENQUIRY MODAL -->
+    <div class="modal fade" id="enquiryModal" tabindex="-1" aria-labelledby="enquiryModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content glass-card border-0 rounded-4 shadow-lg">
+          <div class="modal-header border-0">
+            <h5 class="modal-title fw-bold text-primary" id="enquiryModalLabel">Send Enquiry</h5>
+            <button type="button" class="btn-close shadow-sm" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control form-control-lg" id="name" placeholder="Write Full Name...">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="qualification" class="form-label">Qualification</label>
+                  <input type="text" class="form-control form-control-lg" id="qualification"
+                    placeholder="BE, B.Tech, etc.">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="mobile" class="form-label">Mobile No.</label>
+                  <input type="tel" class="form-control form-control-lg" id="mobile" placeholder="Enter Mobile Number">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="course" class="form-label">Course</label>
+                  <input type="text" class="form-control form-control-lg" id="course"
+                    placeholder="Full Stack Java Developer">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control form-control-lg" id="email"
+                    placeholder="Your Email Address...">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="city" class="form-label">City</label>
+                  <select id="city" class="form-select form-select-lg">
+                    <option selected>Select</option>
+                    <option value="Solapur">Solapur</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Mumbai">Mumbai</option>
+                  </select>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="branch" class="form-label">Branch</label>
+                  <select id="branch" class="form-select form-select-lg">
+                    <option selected>Select City First</option>
+                    <option value="Main Branch">Main Branch</option>
+                    <option value="Sub Branch">Sub Branch</option>
+                  </select>
+                </div>
+
+                <div class="col-12">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control form-control-lg" id="message" rows="4"
+                    placeholder="Write your message..."></textarea>
+                </div>
+
+                <div class="col-12 text-center mt-4">
+                  <button type="submit" class="btn btn-primary btn-lg px-5 rounded-pill shadow-sm">
+                    <i class="fas fa-paper-plane me-2"></i>Send Enquiry
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Main Header -->
+  <header class="main-header py-3 border-bottom bg-white">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="logo">
+        <a href="#">
+          <img src="assets/images/logo.png" alt="Training & Placement Logo" style="height: 50px;" />
+        </a>
+      </div>
+      <nav class="main-nav">
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link active" href="/home">Home</a></li>
+          <li class="nav-item dropdown position-static">
+            <a class="nav-link dropdown-toggle fw-semibold" href="#" id="coursesDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Courses
+            </a>
+
+            <div class="dropdown-menu mega-dropdown shadow-lg border-0 p-4 mt-2 animate__animated animate__fadeIn"
+              aria-labelledby="coursesDropdown">
+              <div class="container-fluid">
+                <div class="row g-4">
+
+                  <!-- Column 1 -->
+                  <div class="col-md-4">
+                    <h6 class="mega-title">100% Job Assurance</h6>
+                    <a class="mega-link" href="/xpro">xPro - Full Stack Dev with AI</a>
+                    <a class="mega-link" href="/testpro">testPro - Automation Testing</a>
+
+                    <h6 class="mega-title mt-4">Master Diploma (6 Months)</h6>
+                    <a class="mega-link" href="/javafullstack">Java Full Stack</a>
+                    <a class="mega-link" href="/dotnet">.Net Full Stack</a>
+                    <a class="mega-link" href="/softwaretesting">Software Testing</a>
+                    <a class="mega-link" href="pdac">P-DAC</a>
+                  </div>
+
+                  <!-- Column 2 -->
+                  <div class="col-md-4">
+                    <h6 class="mega-title">Advanced Diploma (4 Months)</h6>
+                    <a class="mega-link" href="pythonfullstack">Python Full Stack</a>
+                    <a class="mega-link" href="javafullstack">Java Full Stack</a>
+                    <a class="mega-link" href="/dotnet">Dot Net Full Stack</a>
+
+                    <h6 class="mega-title mt-4">Diploma (2 Months)</h6>
+                    <a class="mega-link" href="/uiuxdesign">UI/UX Design</a>
+                    <a class="mega-link" href="datascience">Data Science</a>
+                    <a class="mega-link" href="php">PHP</a>
+                    <a class="mega-link" href="/salesforce">Salesforce</a>
+                  </div>
+
+                  <!-- Column 3 -->
+                  <div class="col-md-4">
+                    <h6 class="mega-title">Short Term Courses</h6>
+                    <a class="mega-link" href="/cc">C / C++</a>
+                    <a class="mega-link" href="/corejava">Core Java</a>
+                    <a class="mega-link" href="/htmlcssbootstrap">HTML / CSS / Bootstrap</a>
+                    <a class="mega-link" href="/angularreact">Angular / React</a>
+                    <a class="mega-link" href="/aws">AWS / DevOps</a>
+                    <a class="mega-link" href="/powerbi">Power BI</a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="/service">Services</a></li>
+          <li class="nav-item dropdown position-relative">
+            <a class="nav-link dropdown-toggle fw-semibold" href="#" id="placementsDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Placements
+            </a>
+            <ul class="dropdown-menu placements-dropdown shadow border-0 mt-2 animate__animated animate__fadeIn"
+              aria-labelledby="placementsDropdown">
+              <li><a class="dropdown-item" href="/overview">Overview</a></li>
+              <!-- <li><a class="dropdown-item" href="#">Placed Students</a></li> -->
+              <li><a class="dropdown-item" href="/fec">Fresher Employment Center</a></li>
+              <li><a class="dropdown-item" href="/our-clients">Our Clients</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="/about">About Us</a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="#">Testimonials</a></li> -->
+          <li class="nav-item"><a class="nav-link" href="/contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!--  -->
+
+
+  <!-- Header Section -->
+  <header class="hero-section">
+    <div class="container text-center">
+      <h1 class="display-4 fw-bold mb-4">Enterprise .NET Certification Program</h1>
+      <p class="lead mb-5">Job Oriented Dot Net Training Institute in Pune</p>
+      <p class="lead mb-5">Train your workforce with our comprehensive .NET development curriculum - designed for
+        corporate excellence</p>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="py-5" id="about">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <div class="custom-shadow p-4 rounded">
+            <h6 class="text-primary fw-bold">ABOUT OUR PROGRAM</h6>
+            <h2 class="mb-4">Enterprise-Grade .NET Training & Certification</h2>
+            <p class="lead">Equip your team with industry-standard .NET skills. Our program is designed to transform
+              developers into highly productive .NET professionals that deliver exceptional value.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="mb-4">
+            <h3 class="h5 mb-3">What is .NET?</h3>
+            <p>.NET Core is a general-purpose development platform maintained by Microsoft and the .NET community on
+              GitHub. It is an open-source, cross-platform framework that supports Windows, macOS, and Linux operating
+              systems. It can be used to build device, cloud, and IoT applications.</p>
+          </div>
+
+          <p>Written from scratch to make it modular, lightweight, fast, and cross-platform, .NET Core applications
+            speed up performance, reduce memory footprint, and are easy to maintain. As it includes core features
+            required to run a basic .NET Core app, other features are provided as NuGet packages, which users can add to
+            applications as needed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why .NET Section -->
+  <section class="py-5 dotnet-bg" id="why-dotnet">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h6 class="text-primary fw-bold">BUSINESS ADVANTAGES</h6>
+        <h2>Why Invest in .NET Training?</h2>
+        <p class="lead">.NET continues to be one of the most critical programming frameworks for enterprise applications
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-box bg-white text-center">
+            <div class="why-dotnet-icon">
+              <i class="fas fa-globe"></i>
+            </div>
+            <h5>Cross-Platform</h5>
+            <p>Develop applications that run on Windows, macOS, and Linux operating systems.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-box bg-white text-center">
+            <div class="why-dotnet-icon">
+              <i class="fas fa-code-branch"></i>
+            </div>
+            <h5>Open Source</h5>
+            <p>Backed by Microsoft and a vibrant community on GitHub.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-box bg-white text-center">
+            <div class="why-dotnet-icon">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <h5>Modular Design</h5>
+            <p>Lightweight framework with features available as NuGet packages.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-box bg-white text-center">
+            <div class="why-dotnet-icon">
+              <i class="fas fa-rocket"></i>
+            </div>
+            <h5>High Performance</h5>
+            <p>Optimized for speed and reduced memory footprint.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Learning Outcomes -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h6 class="text-primary fw-bold">LEARNING OUTCOMES</h6>
+          <h2 class="mb-4">Skills Your Team Will Develop</h2>
+
+          <div class="d-flex mb-4">
+            <div class="me-3 text-primary">
+              <i class="fas fa-check-circle fa-2x"></i>
+            </div>
+            <div>
+              <h5>Cross-Platform Development</h5>
+              <p>Create applications that run consistently across Windows, macOS, and Linux.</p>
+            </div>
+          </div>
+
+          <div class="d-flex mb-4">
+            <div class="me-3 text-primary">
+              <i class="fas fa-check-circle fa-2x"></i>
+            </div>
+            <div>
+              <h5>Modern Web Development</h5>
+              <p>Build responsive web applications using ASP.NET Core and modern frameworks.</p>
+            </div>
+          </div>
+
+          <div class="d-flex mb-4">
+            <div class="me-3 text-primary">
+              <i class="fas fa-check-circle fa-2x"></i>
+            </div>
+            <div>
+              <h5>Cloud Integration</h5>
+              <p>Deploy and manage applications on Azure and other cloud platforms.</p>
+            </div>
+          </div>
+
+          <div class="d-flex mb-4">
+            <div class="me-3 text-primary">
+              <i class="fas fa-check-circle fa-2x"></i>
+            </div>
+            <div>
+              <h5>Microservices Architecture</h5>
+              <p>Design and implement scalable microservices with .NET Core.</p>
+            </div>
+          </div>
+
+          <div class="d-flex">
+            <div class="me-3 text-primary">
+              <i class="fas fa-check-circle fa-2x"></i>
+            </div>
+            <div>
+              <h5>DevOps Integration</h5>
+              <p>Implement CI/CD pipelines for .NET applications.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="custom-shadow p-4 rounded bg-light">
+            <h4 class="mb-4 text-center">Program Highlights</h4>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-transparent">
+                <i class="fas fa-award text-primary me-2"></i>
+                Microsoft-aligned curriculum
+              </li>
+              <li class="list-group-item bg-transparent">
+                <i class="fas fa-user-tie text-primary me-2"></i>
+                Trainers with enterprise development experience
+              </li>
+              <li class="list-group-item bg-transparent">
+                <i class="fas fa-project-diagram text-primary me-2"></i>
+                Project-based learning approach
+              </li>
+              <li class="list-group-item bg-transparent">
+                <i class="fas fa-laptop-code text-primary me-2"></i>
+                Hands-on practical sessions
+              </li>
+              <li class="list-group-item bg-transparent">
+                <i class="fas fa-tasks text-primary me-2"></i>
+                Customizable training modules
+              </li>
+              <li class="list-group-item bg-transparent">
+                <i class="fas fa-file-alt text-primary me-2"></i>
+                Comprehensive assessment and reporting
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Programs Section -->
+  <section class="py-5 dotnet-bg" id="programs">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h6 class="text-primary fw-bold">TRAINING PROGRAMS</h6>
+        <h2>Enterprise .NET Training Programs</h2>
+        <p class="lead">Tailored solutions for different organizational needs</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card course-card">
+            <div class="card-header bg-primary text-white py-3">
+              <h3 class="mb-0 h5">Master Diploma in Full Stack .NET Developer</h3>
+            </div>
+            <div class="card-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <i class="fas fa-clock text-primary me-2"></i>
+                  <strong>Duration:</strong> 6 months (4 hours daily)
+                </li>
+                <li class="list-group-item">
+                  <i class="fas fa-book text-primary me-2"></i>
+                  <strong>Coverage:</strong> Complete .NET ecosystem plus Software Testing, ExpressJS, NodeJS, MongoDB,
+                  Python
+                </li>
+                <li class="list-group-item">
+                  <i class="fas fa-comment text-primary me-2"></i>
+                  <strong>Additional:</strong> Soft skills & Aptitude training
+                </li>
+                <li class="list-group-item">
+                  <i class="fas fa-laptop-code text-primary me-2"></i>
+                  <strong>Projects:</strong> Internship on Live Projects with Internship letter
+                </li>
+                <li class="list-group-item">
+                  <i class="fas fa-certificate text-primary me-2"></i>
+                  <strong>Placement:</strong> Priority Placements
+                </li>
+              </ul>
+            </div>
+            <div class="card-footer bg-white text-center">
+              <span class="text-primary">Contact for corporate rates</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card course-card">
+            <div class="card-header bg-success text-white py-3">
+              <h3 class="mb-0 h5">Advanced Diploma in Full Stack .NET Developer</h3>
+            </div>
+            <div class="card-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <i class="fas fa-clock text-success me-2"></i>
+                  <strong>Duration:</strong> 4 months (4 hours daily)
+                </li>
+                <li class="list-group-item">
+                  <i class="fas fa-book text-success me-2"></i>
+                  <strong>Coverage:</strong> Core .NET plus MVC, WCF, WPF, HTML5, CSS3, Bootstrap, JavaScript,
+                  Angular/ReactJS
+                </li>
+                <li class="list-group-item">
+                  <i class="fas fa-comment text-success me-2"></i>
+                  <strong>Additional:</strong> Soft skills & Aptitude training
+                </li>
+                <li class="list-group-item">
+                  <i class="fas fa-laptop-code text-success me-2"></i>
+                  <strong>Projects:</strong> Project Incubation
+                </li>
+                <li class="list-group-item">
+                  <i class="fas fa-certificate text-success me-2"></i>
+                  <strong>Placement:</strong> 100% Placement Support
+                </li>
+              </ul>
+            </div>
+            <div class="card-footer bg-white text-center">
+              <span class="text-success">Contact for corporate rates</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-5 p-4 bg-white rounded shadow">
+        <h4 class="mb-3 text-center">Eligibility & Prerequisites</h4>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <div class="d-flex">
+              <div class="me-3 text-primary">
+                <i class="fas fa-graduation-cap fa-2x"></i>
+              </div>
+              <div>
+                <h5>Eligibility</h5>
+                <p>BE | BTech | MCA | MCS | MCM | MSc | BCA | BCS | BSc etc.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex">
+              <div class="me-3 text-primary">
+                <i class="fas fa-code fa-2x"></i>
+              </div>
+              <div>
+                <h5>Pre-requisite</h5>
+                <p>Basic Knowledge of C Programming.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Curriculum Section -->
+  <section class="py-5" id="curriculum">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h6 class="text-primary fw-bold">CURRICULUM</h6>
+        <h2>.NET Course Curriculum</h2>
+        <p class="lead">Industry-aligned curriculum designed to develop enterprise-ready professionals</p>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="accordion" id="accordionCore">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                  Core .NET Programming
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionCore">
+                <div class="accordion-body">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">C# Programming Fundamentals</li>
+                    <li class="list-group-item">Object-Oriented Programming</li>
+                    <li class="list-group-item">Data Types and Variables</li>
+                    <li class="list-group-item">Control Flow Statements</li>
+                    <li class="list-group-item">Classes and Inheritance</li>
+                    <li class="list-group-item">Interfaces and Abstractions</li>
+                    <li class="list-group-item">Exception Handling</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo">
+                  Advanced .NET Concepts
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionCore">
+                <div class="accordion-body">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">LINQ and Lambda Expressions</li>
+                    <li class="list-group-item">Asynchronous Programming</li>
+                    <li class="list-group-item">Delegates and Events</li>
+                    <li class="list-group-item">Reflection and Attributes</li>
+                    <li class="list-group-item">Entity Framework Core</li>
+                    <li class="list-group-item">Threading and Concurrency</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mt-4 mt-md-0">
+          <div class="accordion" id="accordionFramework">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree">
+                  .NET Frameworks
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse show" data-bs-parent="#accordionFramework">
+                <div class="accordion-body">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">ASP.NET Core MVC</li>
+                    <li class="list-group-item">Blazor</li>
+                    <li class="list-group-item">Windows Communication Foundation (WCF)</li>
+                    <li class="list-group-item">Windows Presentation Foundation (WPF)</li>
+                    <li class="list-group-item">RESTful APIs and Web Services</li>
+                    <li class="list-group-item">Dependency Injection</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour">
+                  Web Technologies
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFramework">
+                <div class="accordion-body">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">HTML5 & CSS3</li>
+                    <li class="list-group-item">Bootstrap</li>
+                    <li class="list-group-item">JavaScript</li>
+                    <li class="list-group-item">Angular / ReactJS</li>
+                    <li class="list-group-item">ExpressJS & NodeJS</li>
+                    <li class="list-group-item">MongoDB</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <p class="lead">Contact our enterprise solutions team for a detailed curriculum customized to your
+          organization's needs</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Enterprise Features -->
+  <section class="py-5 dotnet-bg">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h6 class="text-primary fw-bold">ENTERPRISE SOLUTIONS</h6>
+        <h2>Why Choose Our Enterprise .NET Training</h2>
+        <p class="lead">Comprehensive solutions designed for corporate environments</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="feature-box bg-white text-center">
+            <div class="why-dotnet-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h5>Microsoft-aligned Training</h5>
+            <p>Curriculum designed to match Microsoft's latest standards and best practices</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="feature-box bg-white text-center">
+            <div class="why-dotnet-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h5>Industry Expertise</h5>
+            <p>Learn from trainers with extensive .NET development experience in enterprise environments</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="feature-box bg-white text-center">
+            <div class="why-dotnet-icon">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <h5>Customized Learning</h5>
+            <p>Training modules tailored to your organization's specific technology stack and needs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="py-5 bg-primary text-white">
+    <div class="container text-center">
+      <h2>Ready to Elevate Your Team's .NET Skills?</h2>
+      <p class="lead mb-4">Partner with us to develop a world-class .NET development team. Our enterprise program
+        delivers measurable results and practical skills that directly translate to increased productivity.</p>
+      <p>Contact our enterprise solutions team today</p>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer id="footer" class="footer dark-theme">
+    <div class="container">
+      <!-- Main Footer Content -->
+      <div class="row g-4">
+        <!-- Contact Info Column -->
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-contact">
+            <h3 class="footer-heading">
+              <a href="index.html" class="logo d-flex align-items-center">
+                <span class="sitename">CONTACT US</span>
+              </a>
+            </h3>
+            <address class="mt-3">
+              <p><i class="bi bi-geo-alt" aria-hidden="true"></i> Training & Placements 4th floor, S.M. Tower,Karve
+                Nagar. Opp Karve Nagar Bus Stand Pune (M.H) - 411052.</p><br>
+              <p><i class="bi bi-telephone" aria-hidden="true"></i> <strong>Phone: </strong> <a
+                  href="tel:+919271271636"> +91 9271271636</a></p>
+              <p><i class="bi bi-envelope" aria-hidden="true"></i> <strong>Email: </strong> <a
+                  href="mailto:hr@kumarsolutions.co.in">{{ 'hr@kumarsolutions.co.in' }}</a></p>
+            </address>
+          </div>
+        </div>
+        <!-- Useful Links Column -->
+        <div class="col-lg-2 col-md-3">
+          <div class="footer-links">
+            <h3 class="footer-heading">USEFUL LINKS</h3>
+            <ul class="list-unstyled">
+              <li><a href="/home">Home</a></li>
+              <li><a href="/alliances">Alliances</a></li>
+              <li><a href="/service">Services</a></li>
+              <li><a href="/privacy">Privacy Policy</a></li>
+              <li><a href="/disclaimer">Disclaimer Policy</a></li>
+
+            </ul>
+          </div>
+        </div>
+        <!-- Services Column -->
+        <div class="col-lg-2 col-md-3">
+          <div class="footer-links">
+            <h3 class="footer-heading">OUR SERVICES</h3>
+            <ul class="list-unstyled">
+              <li><a href="/service">College Training</a></li>
+              <li><a href="/service">Corporates</a></li>
+              <li><a href="/service">Consulting</a></li>
+              <li><a href="/service">Staffing</a></li>
+              <li><a href="/service">Testing</a></li>
+              <li><a href="/service">Career Counseling</a></li>
+
+            </ul>
+          </div>
+        </div>
+        <!-- About Company & Newsletter Column -->
+        <div class="col-lg-4 col-md-12">
+          <div class="footer-newsletter">
+            <h3 class="footer-heading">ABOUT Training & Placements</h3>
+            <p>The major operations of the company are held in Pune. We believe in providing high quality, cost
+              effective solutions to clients PAN INDIA.</p>
+            <div class="social-links mt-3">
+              <a href="https://www.facebook.com/people/KumarSolutions/100064100643146/" target="_blank"
+                rel="noopener noreferrer" aria-label="Facebook">
+                <i class="fab fa-facebook-f" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/kumar-solutions-b2128535/" target="_blank" rel="noopener noreferrer"
+                aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Copyright Section -->
+    <div class="container mt-5">
+      <div class="copyright text-center py-3">
+        <p>&copy; 2014-<span id="current-year"></span>Training & Placements. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- ✅ Bootstrap JS (with Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Chat Bot Button -->
+  <div class="chatbot-container" onclick="toggleChat()">
+    <div class="chat-notification">1</div>
+    <div class="chat-bubble">
+      <div class="chat-label">LET’S CHAT!</div>
+      <div class="chat-icon">
+        <i class="fas fa-comment-dots"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- Chat Window -->
+  <div class="chat-window" id="chatWindow">
+    <div class="chat-header">💬 Support Bot</div>
+    <div class="chat-body">
+      <p>Hi there! How can I assist you today?</p>
+    </div>
+    <div class="chat-footer">
+      <input type="text" placeholder="Type a message..." />
+      <button>Send</button>
+    </div>
+  </div>
+
+  <!-- Font Awesome CDN (Icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Chatbot Styles -->
+  <style>
+    .chatbot-container {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      cursor: pointer;
+      z-index: 9999;
+    }
+
+    .chat-notification {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      background: #d62828;
+      color: #fff;
+      font-size: 12px;
+      font-weight: bold;
+      border-radius: 50%;
+      padding: 3px 6px;
+    }
+
+    .chat-bubble {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      background: #000;
+      color: white;
+      border-radius: 20px;
+      padding: 10px 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .chat-bubble:hover {
+      transform: scale(1.05);
+    }
+
+    .chat-label {
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .chat-icon {
+      background: #005eff;
+      color: white;
+      border-radius: 50%;
+      padding: 10px;
+      font-size: 18px;
+    }
+
+    .chat-window {
+      display: none;
+      position: fixed;
+      bottom: 90px;
+      right: 30px;
+      width: 300px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      z-index: 9999;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    .chat-header {
+      background: #005eff;
+      color: white;
+      padding: 10px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .chat-body {
+      padding: 15px;
+      font-size: 14px;
+      height: 150px;
+      overflow-y: auto;
+    }
+
+    .chat-footer {
+      display: flex;
+      border-top: 1px solid #ccc;
+    }
+
+    .chat-footer input {
+      flex: 1;
+      border: none;
+      padding: 10px;
+      outline: none;
+    }
+
+    .chat-footer button {
+      background: #005eff;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+
+  <!-- Chat Toggle Script -->
+  <script>
+    function toggleChat() {
+      const chatWindow = document.getElementById("chatWindow");
+      chatWindow.style.display =
+        chatWindow.style.display === "block" ? "none" : "block";
+    }
+  </script>
+
+</body>
+
+</html>

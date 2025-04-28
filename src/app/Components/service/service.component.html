@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Training & Placement</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<!-- Top Blue Bar -->
+<div class="top-bar d-flex justify-content-between align-items-center px-3 py-2 bg-primary text-white">
+  <div class="top-bar-left d-flex gap-3 align-items-center">
+    <span><i class="fas fa-phone"></i> 89830-12051/52</span>
+    <a href="#" class="text-white" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" class="text-white" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="#" class="text-white" aria-label="Google Play"><i class="fab fa-google-play"></i></a>
+    <a href="#" class="text-white" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+    <a href="mailto:info@example.com" class="text-white" aria-label="Email"><i class="fas fa-envelope"></i></a>
+  </div>
+  <div class="top-bar-right">
+    <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#enquiryModal">
+      <i class="fas fa-envelope-open-text"></i> Enquiry
+    </a>
+  </div>
+  <!-- ENQUIRY MODAL -->
+  <div class="modal fade" id="enquiryModal" tabindex="-1" aria-labelledby="enquiryModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content glass-card border-0 rounded-4 shadow-lg">
+        <div class="modal-header border-0">
+          <h5 class="modal-title fw-bold text-primary" id="enquiryModalLabel">Send Enquiry</h5>
+          <button type="button" class="btn-close shadow-sm" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="row g-4">
+              <div class="col-md-6">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control form-control-lg" id="name" placeholder="Write Full Name...">
+              </div>
+
+              <div class="col-md-6">
+                <label for="qualification" class="form-label">Qualification</label>
+                <input type="text" class="form-control form-control-lg" id="qualification"
+                  placeholder="BE, B.Tech, etc.">
+              </div>
+
+              <div class="col-md-6">
+                <label for="mobile" class="form-label">Mobile No.</label>
+                <input type="tel" class="form-control form-control-lg" id="mobile" placeholder="Enter Mobile Number">
+              </div>
+
+              <div class="col-md-6">
+                <label for="course" class="form-label">Course</label>
+                <input type="text" class="form-control form-control-lg" id="course"
+                  placeholder="Full Stack Java Developer">
+              </div>
+
+              <div class="col-md-6">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control form-control-lg" id="email" placeholder="Your Email Address...">
+              </div>
+
+              <div class="col-md-6">
+                <label for="city" class="form-label">City</label>
+                <select id="city" class="form-select form-select-lg">
+                  <option selected>Select</option>
+                  <option value="Solapur">Solapur</option>
+                  <option value="Pune">Pune</option>
+                  <option value="Mumbai">Mumbai</option>
+                </select>
+              </div>
+
+              <div class="col-md-6">
+                <label for="branch" class="form-label">Branch</label>
+                <select id="branch" class="form-select form-select-lg">
+                  <option selected>Select City First</option>
+                  <option value="Main Branch">Main Branch</option>
+                  <option value="Sub Branch">Sub Branch</option>
+                </select>
+              </div>
+
+              <div class="col-12">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control form-control-lg" id="message" rows="4"
+                  placeholder="Write your message..."></textarea>
+              </div>
+
+              <div class="col-12 text-center mt-4">
+                <button type="submit" class="btn btn-primary btn-lg px-5 rounded-pill shadow-sm">
+                  <i class="fas fa-paper-plane me-2"></i>Send Enquiry
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Main Header -->
+<header class="main-header py-3 border-bottom bg-white">
+  <div class="container d-flex justify-content-between align-items-center">
+    <div class="logo">
+      <a href="#">
+        <img src="assets/images/logo.png" alt="Training & Placement Logo" style="height: 50px;" />
+      </a>
+    </div>
+    <nav class="main-nav">
+      <ul class="nav">
+        <li class="nav-item"><a class="nav-link active" href="/home">Home</a></li>
+        <li class="nav-item dropdown position-static">
+          <a class="nav-link dropdown-toggle fw-semibold" href="#" id="coursesDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Courses
+          </a>
+
+          <div class="dropdown-menu mega-dropdown shadow-lg border-0 p-4 mt-2 animate__animated animate__fadeIn"
+            aria-labelledby="coursesDropdown">
+            <div class="container-fluid">
+              <div class="row g-4">
+
+                <!-- Column 1 -->
+                <div class="col-md-4">
+                  <h6 class="mega-title">100% Job Assurance</h6>
+                  <a class="mega-link" href="/xpro">xPro - Full Stack Dev with AI</a>
+                  <a class="mega-link" href="/testpro">testPro - Automation Testing</a>
+
+                  <h6 class="mega-title mt-4">Master Diploma (6 Months)</h6>
+                  <a class="mega-link" href="/javafullstack">Java Full Stack</a>
+                  <a class="mega-link" href="/dotnet">.Net Full Stack</a>
+                  <a class="mega-link" href="/softwaretesting">Software Testing</a>
+                  <a class="mega-link" href="pdac">P-DAC</a>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col-md-4">
+                  <h6 class="mega-title">Advanced Diploma (4 Months)</h6>
+                  <a class="mega-link" href="pythonfullstack">Python Full Stack</a>
+                  <a class="mega-link" href="javafullstack">Java Full Stack</a>
+                  <a class="mega-link" href="/dotnet">Dot Net Full Stack</a>
+
+                  <h6 class="mega-title mt-4">Diploma (2 Months)</h6>
+                  <a class="mega-link" href="/uiuxdesign">UI/UX Design</a>
+                  <a class="mega-link" href="datascience">Data Science</a>
+                  <a class="mega-link" href="php">PHP</a>
+                  <a class="mega-link" href="/salesforce">Salesforce</a>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="col-md-4">
+                  <h6 class="mega-title">Short Term Courses</h6>
+                  <a class="mega-link" href="cc">C / C++</a>
+                  <a class="mega-link" href="corejava">Core Java</a>
+                  <a class="mega-link" href="/htmlcssbootstrap">HTML / CSS / Bootstrap</a>
+                  <a class="mega-link" href="/angularreact">Angular / React</a>
+                  <a class="mega-link" href="aws">AWS / DevOps</a>
+                  <a class="mega-link" href="/powerbi">Power BI</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="/service">Services</a></li>
+        <li class="nav-item dropdown position-relative">
+          <a class="nav-link dropdown-toggle fw-semibold" href="#" id="placementsDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Placements
+          </a>
+          <ul class="dropdown-menu placements-dropdown shadow border-0 mt-2 animate__animated animate__fadeIn"
+            aria-labelledby="placementsDropdown">
+            <li><a class="dropdown-item" href="/overview">Overview</a></li>
+            <!-- <li><a class="dropdown-item" href="#">Placed Students</a></li> -->
+            <li><a class="dropdown-item" href="/fec">Fresher Employment Center</a></li>
+            <li><a class="dropdown-item" href="/our-clients">Our Clients</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="/about">About Us</a></li>
+        <!-- <li class="nav-item"><a class="nav-link" href="#">Testimonials</a></li> -->
+        <li class="nav-item"><a class="nav-link" href="/contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!--service  -->
+
+<div class="container py-5">
+  <h2 class="text-center mb-4">Services</h2>
+
+  <!-- Tabs Nav -->
+  <ul class="nav nav-tabs justify-content-center mb-4" id="servicesTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="college-tab" data-bs-toggle="tab" data-bs-target="#college" type="button"
+        role="tab" aria-controls="college" aria-selected="true">🎓College</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="corporate-tab" data-bs-toggle="tab" data-bs-target="#corporate" type="button"
+        role="tab" aria-controls="corporate" aria-selected="false">🏢Corporate</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="consulting-tab" data-bs-toggle="tab" data-bs-target="#consulting" type="button"
+        role="tab" aria-controls="consulting" aria-selected="false">💼Consulting</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="staffing-tab" data-bs-toggle="tab" data-bs-target="#staffing" type="button"
+        role="tab" aria-controls="staffing" aria-selected="false">👥Staffing</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="testing-tab" data-bs-toggle="tab" data-bs-target="#testing" type="button" role="tab"
+        aria-controls="testing" aria-selected="false">🧪Testing</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="counseling-tab" data-bs-toggle="tab" data-bs-target="#counseling" type="button"
+        role="tab" aria-controls="counseling" aria-selected="false">
+        🧭 Career Counseling
+      </button>
+    </li>
+
+  </ul>
+
+  <!-- Tab Content -->
+  <div class="tab-content tab-content-box" id="servicesTabContent">
+    <div class="tab-pane fade show active" id="college" role="tabpanel" aria-labelledby="college-tab">
+      <div class="tab-text">
+        <p class="tab-heading">🎓 Technology Training for Colleges</p>
+
+        <p>Our Institutional Training Division focuses on delivering skill-based training — both technical and soft
+          skills — to colleges and universities across India. In today’s fast-evolving IT landscape, curriculum-based
+          teaching alone is not enough. That’s where we step in — partnering with academic institutions to equip
+          students with real-world, job-ready skills.</p>
+
+        <p>We bridge the gap between students and industries, offering valuable placement support and making
+          students industry-ready with relevant, updated training.</p>
+
+        <p class="fw-bold mt-4">📘 Our Key Programs for Colleges:</p>
+        <ul class="tab-list">
+          <li>💻 Focused training in emerging IT domains to ensure job readiness.</li>
+          <li>🗣️ Soft skills, interview techniques & personality development workshops.</li>
+          <li>🤝 Campus placement services across India via active industry tie-ups.</li>
+          <li>🏢 Support for on-campus recruitment through reputed companies.</li>
+          <li>🎯 Customized training modules aligned with company-specific roles.</li>
+          <li>👨‍🏫 Live industry expert sessions offering insights into corporate culture.</li>
+        </ul>
+      </div>
+    </div>
+
+
+    <!-- Additional tabs content here if needed -->
+    <div class="tab-pane fade" id="corporate" role="tabpanel" aria-labelledby="corporate-tab">
+      <div class="tab-text">
+        <p class="tab-heading">🏢 Corporate Training & Workshops</p>
+
+        <p><strong>PEOPLE / CUSTOMERS</strong></p>
+        <p>Customer satisfaction is at the heart of our training process. It's said that it costs five times more to
+          attract a new customer than to retain an existing one. For us, loyal customers sit at the top rung of our
+          success ladder.</p>
+
+        <ul class="tab-list">
+          <li>Continuous improvement is our commitment.</li>
+          <li>Primary focus on service — always.</li>
+          <li>We tirelessly ensure best-in-class service at every touchpoint.</li>
+          <li>Our operational model revolves entirely around customer needs.</li>
+        </ul>
+
+        <p class="fw-bold mt-4">💡 What We Do?</p>
+        <p>Profound’s Corporate Training & Workshops Vertical is dedicated to catering to corporate houses. Our approach
+          ensures efficiency, cost-effectiveness, and minimal disruption.</p>
+
+        <ul class="tab-list">
+          <li>Tailored training programs focused on Knowledge, Skills, Tools & Techniques.</li>
+          <li>Flexible scheduling aligned with your timelines and budget.</li>
+          <li>Performance-centric programs that increase workforce productivity and effectiveness.</li>
+          <li>Return-on-investment-driven training strategy.</li>
+          <li>Competency gap analysis and strategic development planning.</li>
+        </ul>
+
+        <p class="fw-bold mt-4">🚀 Our Offerings:</p>
+        <ul class="tab-list">
+          <li><strong>Induction/Entry-Level Training:</strong> Equip new hires quickly to become productive
+            contributors.</li>
+          <li><strong>Experienced Staff Upskilling:</strong> Customized technical training based on Training Need
+            Analysis (TNA).</li>
+          <li><strong>Niche Technology Programs:</strong> Targeted skill-building in emerging tech areas.</li>
+          <li><strong>Open House Workshops:</strong> Collaborative sessions led by seasoned industry experts.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="consulting" role="tabpanel" aria-labelledby="consulting-tab">
+      <div class="tab-text">
+        <p class="tab-heading">🧠 IT Consulting & Strategic Solutions</p>
+
+        <p>Our <strong>IT Consulting Services</strong> are crafted to guide organizations through complex technology
+          challenges with confidence. We help companies enhance their processes, modernize infrastructure, and embrace
+          digital transformation with strategic expertise and actionable insights.</p>
+
+        <p>Whether you're a startup or an enterprise, our consulting team works closely with you to create custom
+          solutions that align with your business goals and deliver measurable impact.</p>
+
+        <p class="fw-bold mt-4">📌 Core Consulting Focus Areas:</p>
+        <ul class="tab-list">
+          <li>🔍 In-depth IT Assessments & audits to evaluate current systems and performance.</li>
+          <li>📊 Digital Transformation planning tailored to your business objectives.</li>
+          <li>🔐 Guidance on cybersecurity, compliance, and risk mitigation strategies.</li>
+          <li>🛠️ Implementation of scalable and robust cloud-based architectures.</li>
+          <li>👔 Business Process Optimization using cutting-edge technologies.</li>
+          <li>🤝 Collaborative consulting with hands-on involvement and executive reporting.</li>
+        </ul>
+
+        <p class="mt-4">With a consultative approach and deep domain expertise, we ensure your technology becomes a
+          strategic asset — not just a tool.</p>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="staffing" role="tabpanel" aria-labelledby="staffing-tab">
+      <div class="tab-text">
+        <p class="tab-heading">👥 Talent Acquisition & Staffing Solutions</p>
+
+        <p>We specialize in providing end-to-end <strong>Staffing Solutions</strong> for organizations of all sizes and
+          across industries. Our approach focuses on connecting skilled professionals with the right roles, helping
+          companies build high-performance teams that drive results.</p>
+
+        <p>Whether you need short-term project-based staffing, contract-to-hire, or permanent placement, we ensure
+          seamless hiring backed by thorough screening, technology alignment, and cultural fitment.</p>
+
+        <p class="fw-bold mt-4">📌 Our Staffing Services Include:</p>
+        <ul class="tab-list">
+          <li>📋 Customized recruitment strategies tailored to specific job roles.</li>
+          <li>🔎 Comprehensive screening and technical assessment of candidates.</li>
+          <li>⚡ Quick turnaround and deployment of skilled professionals.</li>
+          <li>🧑‍💻 IT, Non-IT, Technical, and Functional staffing support.</li>
+          <li>🌐 PAN-India presence to support location-specific hiring needs.</li>
+          <li>💼 Onboarding support and performance tracking.</li>
+        </ul>
+
+        <p class="mt-4">We don’t just fill roles — we build careers and strengthen teams with reliable, scalable, and
+          responsive staffing services.</p>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="testing" role="tabpanel" aria-labelledby="testing-tab">
+      <div class="tab-text">
+        <p class="tab-heading">🧪 Software Testing & Quality Assurance</p>
+
+        <p>At Kumar IT Solutions, we offer reliable and scalable <strong>Software Testing and Quality Assurance
+            (QA)</strong> services to ensure product excellence. In a fast-paced digital world, quality is not an option
+          — it’s a necessity.</p>
+
+        <p>Our QA team works closely with development teams to identify bugs early, reduce time-to-market, and ensure a
+          seamless user experience across platforms and devices.</p>
+
+        <p class="fw-bold mt-4">🛠️ Key Testing Services We Offer:</p>
+        <ul class="tab-list">
+          <li>🔍 Manual Testing for real-world user scenarios and edge cases.</li>
+          <li>⚙️ Automation Testing using modern frameworks like Selenium, Appium, etc.</li>
+          <li>📱 Mobile App Testing (iOS & Android) for performance, compatibility, and usability.</li>
+          <li>🌐 Web Application Testing to ensure responsiveness, speed, and security.</li>
+          <li>🛡️ Security & Penetration Testing for vulnerability detection.</li>
+          <li>📈 Performance Testing to measure scalability under load.</li>
+        </ul>
+
+        <p class="mt-4">From startups to enterprises, we help businesses release <strong>bug-free, high-quality
+            software</strong> on time — every time.</p>
+      </div>
+    </div>
+
+    <div class="tab-pane fade" id="counseling" role="tabpanel" aria-labelledby="counseling-tab">
+      <div class="tab-text">
+        <p class="tab-heading">🧭 Career Counseling Services</p>
+        <p>Our career counseling program is designed to guide students toward a clear and achievable career path.
+          Through expert sessions, aptitude analysis, and industry mentoring, we empower students to make informed
+          career decisions.</p>
+
+        <ul class="tab-list">
+          <li>👩‍🏫 One-on-one counseling sessions with industry experts</li>
+          <li>🧠 Aptitude and interest-based assessments</li>
+          <li>🛤️ Guidance on career pathways across different IT domains</li>
+          <li>📄 Support with resume building and personal branding</li>
+          <li>📊 Insight into current industry hiring trends</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Footer -->
+<footer id="footer" class="footer dark-theme">
+  <div class="container">
+    <!-- Main Footer Content -->
+    <div class="row g-4">
+      <!-- Contact Info Column -->
+      <div class="col-lg-4 col-md-6">
+        <div class="footer-contact">
+          <h3 class="footer-heading">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <span class="sitename">CONTACT US</span>
+            </a>
+          </h3>
+          <address class="mt-3">
+            <p><i class="bi bi-geo-alt" aria-hidden="true"></i> Training & Placements 4th floor, S.M. Tower,Karve
+              Nagar. Opp Karve Nagar Bus Stand Pune (M.H) - 411052.</p><br>
+            <p><i class="bi bi-telephone" aria-hidden="true"></i> <strong>Phone: </strong> <a href="tel:+919271271636">
+                +91 9271271636</a></p>
+            <p><i class="bi bi-envelope" aria-hidden="true"></i> <strong>Email: </strong> <a
+                href="mailto:hr@kumarsolutions.co.in">{{ 'hr@kumarsolutions.co.in' }}</a></p>
+          </address>
+        </div>
+      </div>
+      <!-- Useful Links Column -->
+      <div class="col-lg-2 col-md-3">
+        <div class="footer-links">
+          <h3 class="footer-heading">USEFUL LINKS</h3>
+          <ul class="list-unstyled">
+            <li><a href="/home">Home</a></li>
+            <li><a href="/alliances">Alliances</a></li>
+            <li><a href="/service">Services</a></li>
+            <li><a href="/privacy">Privacy Policy</a></li>
+            <li><a href="/disclaimer">Disclaimer Policy</a></li>
+
+          </ul>
+        </div>
+      </div>
+      <!-- Services Column -->
+      <div class="col-lg-2 col-md-3">
+        <div class="footer-links">
+          <h3 class="footer-heading">OUR SERVICES</h3>
+          <ul class="list-unstyled">
+            <li><a href="/service">College Training</a></li>
+            <li><a href="/service">Corporates</a></li>
+            <li><a href="/service">Consulting</a></li>
+            <li><a href="/service">Staffing</a></li>
+            <li><a href="/service">Testing</a></li>
+            <li><a href="/service">Career Counseling</a></li>
+
+          </ul>
+        </div>
+      </div>
+      <!-- About Company & Newsletter Column -->
+      <div class="col-lg-4 col-md-12">
+        <div class="footer-newsletter">
+          <h3 class="footer-heading">ABOUT Training & Placements</h3>
+          <p>The major operations of the company are held in Pune. We believe in providing high quality, cost
+            effective solutions to clients PAN INDIA.</p>
+          <div class="social-links mt-3">
+            <a href="https://www.facebook.com/people/KumarSolutions/100064100643146/" target="_blank"
+              rel="noopener noreferrer" aria-label="Facebook">
+              <i class="fab fa-facebook-f" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/kumar-solutions-b2128535/" target="_blank" rel="noopener noreferrer"
+              aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Copyright Section -->
+  <div class="container mt-5">
+    <div class="copyright text-center py-3">
+      <p>&copy; 2014-<span id="current-year"></span>Training & Placements. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- ✅ Bootstrap JS (with Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Chat Bot Button -->
+<div class="chatbot-container" onclick="toggleChat()">
+  <div class="chat-notification">1</div>
+  <div class="chat-bubble">
+    <div class="chat-label">LET’S CHAT!</div>
+    <div class="chat-icon">
+      <i class="fas fa-comment-dots"></i>
+    </div>
+  </div>
+</div>
+
+<!-- Chat Window -->
+<div class="chat-window" id="chatWindow">
+  <div class="chat-header">💬 Support Bot</div>
+  <div class="chat-body">
+    <p>Hi there! How can I assist you today?</p>
+  </div>
+  <div class="chat-footer">
+    <input type="text" placeholder="Type a message..." />
+    <button>Send</button>
+  </div>
+</div>
+
+<!-- Font Awesome CDN (Icons) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+<!-- Chatbot Styles -->
+<style>
+  .chatbot-container {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    z-index: 9999;
+  }
+
+  .chat-notification {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: #d62828;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 3px 6px;
+  }
+
+  .chat-bubble {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: #000;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+
+  .chat-bubble:hover {
+    transform: scale(1.05);
+  }
+
+  .chat-label {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .chat-icon {
+    background: #005eff;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 18px;
+  }
+
+  .chat-window {
+    display: none;
+    position: fixed;
+    bottom: 90px;
+    right: 30px;
+    width: 300px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    z-index: 9999;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  .chat-header {
+    background: #005eff;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .chat-body {
+    padding: 15px;
+    font-size: 14px;
+    height: 150px;
+    overflow-y: auto;
+  }
+
+  .chat-footer {
+    display: flex;
+    border-top: 1px solid #ccc;
+  }
+
+  .chat-footer input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    outline: none;
+  }
+
+  .chat-footer button {
+    background: #005eff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+
+<!-- Chat Toggle Script -->
+<script>
+  function toggleChat() {
+    const chatWindow = document.getElementById("chatWindow");
+    chatWindow.style.display =
+      chatWindow.style.display === "block" ? "none" : "block";
+  }
+</script>
+
+</html>
