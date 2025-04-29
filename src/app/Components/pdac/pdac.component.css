@@ -554,56 +554,87 @@ img {
   text-decoration: underline;
 }
 /*  */
-body {
-  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-  color: #fff;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-.pdac-section {
-  padding: 4rem 1rem;
-}
-
-.section-title {
-  color: #00d4ff;
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-
-.glass-box {
-  background: rgba(255, 255, 255, 0.07);
-  backdrop-filter: blur(14px);
-  border-radius: 16px;
+/* Glassmorphism Card */
+.pdac-section .glass-box {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(16px);
+  border-radius: 1.25rem;
   padding: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  transition: 0.3s ease;
+  margin-bottom: 2rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.pdac-section .glass-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.2);
 }
 
-.glass-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
-}
-
-.highlight {
-  color: #ffdd57;
-  font-weight: 600;
-}
-
-.badge-info {
-  background-color: #00d4ff;
-  color: #000;
-  font-weight: 600;
-  padding: 0.4rem 1rem;
-  border-radius: 20px;
-  display: inline-block;
+/* Section Title Styling */
+.pdac-section .section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1d3557;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin-bottom: 1rem;
 }
 
-ul {
-  padding-left: 1.2rem;
+/* Badge Info Styling */
+.pdac-section .badge-info {
+  display: inline-block;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 114, 255, 0.3);
 }
 
-li::marker {
-  color: #00d4ff;
+/* Subsection Titles (h4) */
+.pdac-section h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ff8c00;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Paragraph and List Text */
+.pdac-section p,
+.pdac-section ul,
+.pdac-section li {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+/* List Check Style */
+.pdac-section ul {
+  padding-left: 1.2rem;
+}
+.pdac-section ul li::before {
+  content: "✔";
+  color: #28a745;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+/* Highlighted Date or Important Info */
+.pdac-section .highlight {
+  font-weight: 600;
+  color: #e63946;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .pdac-section .section-title {
+    font-size: 2rem;
+  }
+  .pdac-section .glass-box {
+    padding: 1.5rem;
+  }
 }
