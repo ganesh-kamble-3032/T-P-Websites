@@ -545,44 +545,16 @@ img {
     display: none !important;
   }
 }
-/* overview */  body {
-      background-color: #f8f9fa;
-    }
+/* overview */
+.glass-card {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
 
-    .placements-section {
-      padding: 60px 15px;
-    }
-
-    .highlight-icon {
-      color: #5cb85c;
-      margin-right: 8px;
-    }
-
-    .highlights li {
-      margin-bottom: 10px;
-      font-size: 1rem;
-    }
-
-    .custom-link {
-      font-size: 1.2rem;
-      font-weight: 500;
-    }
-
-    .custom-link a {
-      color: #5cb85c;
-      text-decoration: none;
-    }
-
-    .custom-link a:hover {
-      text-decoration: underline;
-    }
-
-    .qualification a {
-      text-decoration: none;
-      color: #007bff;
-      font-weight: 500;
-    }
-
-    .qualification a:hover {
-      text-decoration: underline;
-    }
+.text-gradient {
+  background: linear-gradient(to right, #0d6efd, #6610f2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
