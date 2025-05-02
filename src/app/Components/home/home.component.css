@@ -187,33 +187,6 @@ img {
   transform: translateX(4px);
 }
 
-/*  */
-
-/* Enquiry */
-.glass-card {
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 20px;
-}
-
-.modal-content {
-  animation: fadeInUp 0.6s ease;
-}
-
-@keyframes fadeInUp {
-  from {
-    transform: translateY(40px);
-    opacity: 0;
-  }
-
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
 /*img  */
 .placements-dropdown {
   min-width: 250px;
@@ -779,3 +752,4 @@ body {
     display: none !important;
   }
 }
+/*  */

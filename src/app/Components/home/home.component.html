@@ -6,13 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Training & Placement</title>
 
-  <!-- Bootstrap 5 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- Font Awesome -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
@@ -30,81 +26,89 @@
       <a href="mailto:info@example.com" class="text-white" aria-label="Email"><i class="fas fa-envelope"></i></a>
     </div>
     <!-- Enquiry -->
-    <div class="top-bar-right">
-      <a href="#" class="text-white fw-semibold" data-bs-toggle="modal" data-bs-target="#enquiryModal">
-        <i class="fas fa-envelope-open-text me-1"></i> Enquiry
-      </a>
+    <div class="text-center mt-5">
+      <button class="btn btn-warning px-4 py-2 rounded-pill" data-bs-toggle="modal" data-bs-target="#enquiryModal">
+        Enquire Now
+      </button>
     </div>
 
     <!-- Enquiry Modal -->
     <div class="modal fade" id="enquiryModal" tabindex="-1" aria-labelledby="enquiryModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content glass-card border-0 rounded-5 shadow-lg">
-          <div class="modal-header border-0">
-            <h5 class="modal-title fw-bold text-primary-emphasis" id="enquiryModalLabel">📩 Send Your Enquiry</h5>
-            <button type="button" class="btn-close shadow-sm" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body px-md-5 py-md-4">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 bg-transparent">
+          <div class="circle-modal-content">
+            <button type="button" class="circle-modal-close" data-bs-dismiss="modal">&times;</button>
+            <h4 class="mb-4 fw-bold">Enquire Now</h4>
             <form>
-              <div class="row g-4">
-                <div class="col-md-6">
-                  <label for="name" class="form-label">Full Name</label>
-                  <input type="text" class="form-control form-control-lg soft-input" id="name"
-                    placeholder="Enter your name...">
-                </div>
-                <div class="col-md-6">
-                  <label for="qualification" class="form-label">Qualification</label>
-                  <input type="text" class="form-control form-control-lg soft-input" id="qualification"
-                    placeholder="BE, B.Tech, etc.">
-                </div>
-                <div class="col-md-6">
-                  <label for="mobile" class="form-label">Mobile Number</label>
-                  <input type="tel" class="form-control form-control-lg soft-input" id="mobile"
-                    placeholder="Enter 10-digit mobile number">
-                </div>
-                <div class="col-md-6">
-                  <label for="course" class="form-label">Interested Course</label>
-                  <input type="text" class="form-control form-control-lg soft-input" id="course"
-                    placeholder="Full Stack Developer, etc.">
-                </div>
-                <div class="col-md-6">
-                  <label for="email" class="form-label">Email Address</label>
-                  <input type="email" class="form-control form-control-lg soft-input" id="email"
-                    placeholder="yourname@example.com">
-                </div>
-                <div class="col-md-6">
-                  <label for="city" class="form-label">City</label>
-                  <select id="city" class="form-select form-select-lg soft-input">
-                    <option selected>Select City</option>
-                    <option value="Solapur">Solapur</option>
-                    <option value="Pune">Pune</option>
-                    <option value="Mumbai">Mumbai</option>
-                  </select>
-                </div>
-                <div class="col-md-6">
-                  <label for="branch" class="form-label">Branch</label>
-                  <select id="branch" class="form-select form-select-lg soft-input">
-                    <option selected>Select Branch</option>
-                    <option value="Main Branch">Main Branch</option>
-                    <option value="Sub Branch">Sub Branch</option>
-                  </select>
-                </div>
-                <div class="col-12">
-                  <label for="message" class="form-label">Your Message</label>
-                  <textarea class="form-control form-control-lg soft-input" id="message" rows="4"
-                    placeholder="Write your message here..."></textarea>
-                </div>
-                <div class="col-12 text-center mt-4">
-                  <button type="submit" class="btn btn-primary btn-lg px-5 rounded-pill shadow-sm neumorphic-btn">
-                    <i class="fas fa-paper-plane me-2"></i> Send Enquiry
-                  </button>
-                </div>
-              </div>
+              <input type="text" placeholder="*Name" required>
+              <input type="tel" placeholder="*Phone" required>
+              <input type="email" placeholder="*Email" required>
+              <input type="text" placeholder="*Interested In" required>
+              <button type="submit" class="submit-btn mt-2">Submit</button>
             </form>
           </div>
         </div>
       </div>
     </div>
+    <style>
+      /* Modal Design */
+      .circle-modal-content {
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        background-color: #0d1b42;
+        color: white;
+        padding: 2rem;
+        text-align: center;
+        position: relative;
+        margin: auto;
+      }
+
+      .circle-modal-content input {
+        border: none;
+        border-radius: 25px;
+        padding: 10px 20px;
+        width: 100%;
+        margin-bottom: 15px;
+      }
+
+      .circle-modal-content input:focus {
+        outline: none;
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
+      }
+
+      .circle-modal-content button.submit-btn {
+        background-color: #f7a600;
+        color: white;
+        border: none;
+        padding: 10px 40px;
+        border-radius: 25px;
+        font-weight: bold;
+      }
+
+      .circle-modal-close {
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        background-color: #f7a600;
+        color: white;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        font-weight: bold;
+        border: none;
+      }
+
+      /* Centering modal */
+      .modal-dialog-centered {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+    </style>
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 
   </div>
