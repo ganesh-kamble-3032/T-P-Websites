@@ -243,14 +243,141 @@
         freshers and professionals alike, all delivered by a team of experienced, well-informed, and industry-ready
         faculty members.</p>
     </div>
+<!-- new about -->
+<!-- Why iTpreneur -->
+<section class="why-itpreneur-section container py-5">
+  <div class="text-center mb-5">
+    <h2 class="section-title">Why <span class="highlight">T&P</span>?</h2>
+    <p class="section-subtitle">Get ahead by signing up for our courses today 🚀</p>
+  </div>
 
-    <!-- Vision -->
-    <div class="about-box glass-box mt-5">
-      <h4 class="box-heading">🎯 Vision</h4>
-      <p class="box-content">"To be a Centre of Excellence for Profound Education, Training, and Research in Information
-        Technologies for creating Proficient, Motivated Professionals with Ample Employment Prospects Leading to
-        Enrichment of Nation’s Human Capital."</p>
+  <div class="glass-card mb-4 p-4">
+    <p>
+      <strong>T&P</strong> is committed to helping IT students reach their goals, personalizing their learning journey, and achieving their dream job by offering an innovative, industry-aligned environment.
+    </p>
+    <p>
+      We're one of Pune’s top IT training institutes focused on <strong>Job-Oriented Training, Talent Management, Campus Recruitment, and Contract Staffing</strong>.
+    </p>
+    <p>
+      We conduct <strong>Campus to Corporate</strong> programs, live project training, and in-house sessions to bridge the gap between college education and real-world skills.
+    </p>
+    <p>
+      Our aim is to empower students to compete globally with practical knowledge, modern skills, and professional grooming.
+    </p>
+
+    <div class="text-center mt-4">
+      <a href="/contact" class="btn btn-primary btn-lg">🎓 Join Now</a>
     </div>
+  </div>
+
+  <!-- Feature Highlights -->
+  <div class="row gy-4">
+    <div class="col-md-6 col-lg-3">
+      <div class="feature-box glass-box text-center p-4">
+        <h5 class="box-heading">💡 Innovative</h5>
+        <p class="box-content">We push learning beyond the edge using the latest tech and industry trends to keep training future-proof.</p>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <div class="feature-box glass-box text-center p-4">
+        <h5 class="box-heading">🧠 Experienced</h5>
+        <p class="box-content">Our trainers are industry professionals with years of hands-on real-world knowledge and expertise.</p>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <div class="feature-box glass-box text-center p-4">
+        <h5 class="box-heading">🎓 Professional</h5>
+        <p class="box-content">We exceed expectations by maintaining high professional standards in all our training services.</p>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <div class="feature-box glass-box text-center p-4">
+        <h5 class="box-heading">🔒 Trusted</h5>
+        <p class="box-content">We build trust with every student and partner, ensuring transparency, quality, and reliability.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Counters -->
+  <div class="row text-center mt-5">
+    <div class="col-md-4">
+      <div class="counter-box">
+        <h2 class="counter" data-target="4000">4000</h2>
+        <p class="counter-label">Students Trained</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="counter-box">
+        <h2 class="counter" data-target="200">200</h2>
+        <p class="counter-label">Hiring Partners</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="counter-box">
+        <h2 class="counter" data-target="10">10</h2>
+        <p class="counter-label">Years of Excellence</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- script -->
+<script>
+  const counters = document.querySelectorAll('.counter');
+  counters.forEach(counter => {
+    const updateCount = () => {
+      const target = +counter.getAttribute('data-target');
+      const count = +counter.innerText;
+      const increment = target / 100;
+
+      if (count < target) {
+        counter.innerText = Math.ceil(count + increment);
+        setTimeout(updateCount, 20);
+      } else {
+        counter.innerText = target;
+      }
+    };
+    updateCount();
+  });
+</script>
+
+<!--  -->
+<section class="about-hero">
+  <div class="glass-card">
+    <h1>Training for a New Age Career 💼</h1>
+    <h2>Helping You Create a Better Tomorrow 🌟</h2>
+    <p>
+      <strong>T&P</strong> is one of the <strong>Best IT Training Institutes in Pune</strong>,
+      dedicated to introducing new skills and talent into Pune’s IT sector.
+      We are a proudly unique company with services covering all levels of IT
+      recruitment and skill development.
+    </p>
+    <p>
+      Since 2014, we've helped over <strong>4000 people</strong> launch their careers in Tech and
+      Digital industries, and supported their growth through our integrated training
+      and recruitment services.
+    </p>
+    <p>
+      Across all our services, our mission is simple: <strong>To Make IT Happen</strong> – for the
+      benefit of our candidates, our clients, and the ever-growing IT sector in Pune.
+    </p>
+  </div>
+</section>
+    <!-- Vision -->
+    <!-- Vision -->
+<div class="about-box glass-box mt-5">
+  <h4 class="box-heading">🎯 Vision</h4>
+  <ul class="box-content vision-list">
+    <li>A vision without an action is just a dream.</li>
+    <li>To inspire all students by giving them the knowledge to achieve their dream jobs.</li>
+    <li>To work hard every day to become the world’s most respected institute brand.</li>
+    <li>To provide education that transforms students through rigorous coursework and a deep understanding of societal and industry needs.</li>
+    <li>To inspire employees to learn more productively by providing clarity, focus, and shared goals.</li>
+    <li>One day, all the students in this nation will have the opportunity to get their dream job.</li>
+    <li>To drive a new era of development, growth, and productivity.</li>
+    <li>To reach a whole new level by providing the best IT services in India.</li>
+  </ul>
+</div>
+
 
     <!-- Mission -->
     <div class="about-box glass-box mt-4">

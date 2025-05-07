@@ -546,49 +546,166 @@ img {
   }
 }
 /* about */
-.about-section {
-  max-width: 1000px;
-  margin: auto;
-  color: #1f1f1f;
+/* Base Reset & Typography */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: 'Segoe UI', 'Inter', sans-serif;
+  background-color: #f5f9ff;
+  color: #333;
+}
+
+/* Section Titles */
 .section-title {
-  font-size: 2.5rem;
-  font-weight: bold;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #003366;
 }
 
 .highlight {
-  color: #007bff;
+  color: #0077b6;
 }
 
 .section-subtitle {
   font-size: 1.2rem;
-  color: #6c757d;
+  font-weight: 500;
+  color: #666;
+}
+
+/* Main About Section */
+.about-section {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.about-content {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #444;
+  padding: 10px 20px;
 }
 
 .about-content p {
-  font-size: 1.05rem;
-  line-height: 1.8;
-  margin-bottom: 1rem;
+  margin-bottom: 20px;
 }
 
-.about-box {
-  border-radius: 20px;
+/* Glass-style Cards */
+.glass-card,
+.glass-box {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 18px;
   padding: 30px;
-  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+  border: 1px solid rgba(200, 200, 255, 0.3);
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(12px);
+  transition: transform 0.3s ease;
+  margin-bottom: 30px;
 }
 
-.box-heading {
-  font-size: 1.5rem;
+.glass-card:hover,
+.glass-box:hover {
+  transform: translateY(-5px);
+}
+
+/* Hero Subsection */
+.about-hero {
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.glass-card h1 {
+  font-size: 2rem;
+  color: #003366;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.glass-card h2 {
+  font-size: 1.3rem;
+  color: #0077b6;
+  margin-bottom: 20px;
   font-weight: 600;
+}
+
+.glass-card p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #444;
   margin-bottom: 15px;
-  color: #343a40;
+}
+
+/* Box Headings (Vision, Mission, Values) */
+.box-heading {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #004080;
+  margin-bottom: 10px;
 }
 
 .box-content {
-  font-size: 1rem;
-  color: #2c2c2c;
+  font-size: 1.05rem;
+  color: #444;
+  line-height: 1.7;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .glass-card,
+  .glass-box {
+    padding: 20px;
+  }
+
+  .glass-card h1 {
+    font-size: 1.6rem;
+  }
+
+  .glass-card h2 {
+    font-size: 1.1rem;
+  }
+
+  .about-content,
+  .box-content {
+    font-size: 1rem;
+  }
+}
+/* new vision */
+.vision-list {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.vision-list li {
+  margin-bottom: 12px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #444;
+}
+/* why */
+.counter-box h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0066cc;
+}
+.counter-label {
+  font-size: 1.1rem;
+  margin-top: 5px;
+  color: #444;
+}
+.btn-primary {
+  background-color: #0066cc;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+.btn-primary:hover {
+  background-color: #004b99;
 }
