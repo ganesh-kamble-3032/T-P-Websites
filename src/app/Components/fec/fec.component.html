@@ -223,10 +223,54 @@
     <div class="highlight-box">✅ Free Technology updates & many more...</div>
   </div>
 
-  <div class="text-center mb-5">
+  <!-- <div class="text-center mb-5">
     <a href="" class="btn btn-register">Fill Registration Form</a>
+  </div> -->
+  <!-- form -->
+   <!-- Trigger Button -->
+<!-- Centered Button Wrapper -->
+<div class="d-flex justify-content-center mt-5">
+  <button class="btn btn-primary rounded-pill" data-bs-toggle="modal" data-bs-target="#registrationModal">
+    Fill Registration Form
+  </button>
+</div>
+<br>
+<!-- Modal -->
+<div class="modal fade" id="registrationModal" tabindex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content glass-box">
+      <div class="modal-header">
+        <h5 class="modal-title" id="registrationModalLabel">Registration Form</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="modalName" class="form-label">Name</label>
+            <input type="text" class="form-control" id="modalName" required>
+          </div>
+          <div class="mb-3">
+            <label for="modalEmail" class="form-label">Email</label>
+            <input type="email" class="form-control" id="modalEmail" required>
+          </div>
+          <div class="mb-3">
+            <label for="modalCourse" class="form-label">Course</label>
+            <select class="form-select" id="modalCourse">
+              <option>Java Full Stack</option>
+              <option>Python + Data Science</option>
+              <option>Salesforce</option>
+            </select>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-success">Register</button>
+        </div>
+      </form>
+    </div>
   </div>
+</div>
 
+<!--  -->
   <div class="note mb-5">
     <h5 class="fw-bold mb-3">IMPORTANT NOTE:</h5>
     <ul>
