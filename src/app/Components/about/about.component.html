@@ -271,55 +271,94 @@
     </div>
   </div>
 
-  <!-- Feature Highlights -->
-  <div class="row gy-4">
-    <div class="col-md-6 col-lg-3">
-      <div class="feature-box glass-box text-center p-4">
-        <h5 class="box-heading">💡 Innovative</h5>
-        <p class="box-content">We push learning beyond the edge using the latest tech and industry trends to keep training future-proof.</p>
+<div class="container my-5">
+  <div class="glass-box p-4 rounded-4 shadow-lg text-dark">
+    <h4 class="text-center mb-4 fw-bold">🌟 Why Choose Us?</h4>
+    <div class="row text-center gy-4">
+      <div class="col-6 col-lg-3">
+        <div class="box">
+          <h5 class="box-heading">💡 Innovative</h5>
+          <p class="box-content">We push learning beyond the edge using the latest tech and industry trends.</p>
+        </div>
       </div>
-    </div>
-    <div class="col-md-6 col-lg-3">
-      <div class="feature-box glass-box text-center p-4">
-        <h5 class="box-heading">🧠 Experienced</h5>
-        <p class="box-content">Our trainers are industry professionals with years of hands-on real-world knowledge and expertise.</p>
+      <div class="col-6 col-lg-3">
+        <div class="box">
+          <h5 class="box-heading">🧠 Experienced</h5>
+          <p class="box-content">Industry experts with real-world skills deliver quality training.</p>
+        </div>
       </div>
-    </div>
-    <div class="col-md-6 col-lg-3">
-      <div class="feature-box glass-box text-center p-4">
-        <h5 class="box-heading">🎓 Professional</h5>
-        <p class="box-content">We exceed expectations by maintaining high professional standards in all our training services.</p>
+      <div class="col-6 col-lg-3">
+        <div class="box">
+          <h5 class="box-heading">🎓 Professional</h5>
+          <p class="box-content">We maintain high standards in training and conduct.</p>
+        </div>
       </div>
-    </div>
-    <div class="col-md-6 col-lg-3">
-      <div class="feature-box glass-box text-center p-4">
-        <h5 class="box-heading">🔒 Trusted</h5>
-        <p class="box-content">We build trust with every student and partner, ensuring transparency, quality, and reliability.</p>
+      <div class="col-6 col-lg-3">
+        <div class="box">
+          <h5 class="box-heading">🔒 Trusted</h5>
+          <p class="box-content">Transparency, reliability, and trust form our foundation.</p>
+        </div>
       </div>
     </div>
   </div>
+</div>
+
+
 
   <!-- Counters -->
-  <div class="row text-center mt-5">
-    <div class="col-md-4">
-      <div class="counter-box">
-        <h2 class="counter" data-target="4000">4000</h2>
-        <p class="counter-label">Students Trained</p>
+ <!-- Counter Section with Title -->
+<section class="my-5 text-center">
+  <div class="container">
+    <h2 class="display-5 fw-bold mb-3">🚀 Our Impact in Numbers</h2>
+    <p class="text-muted mb-5">We are proud of the milestones we've achieved over the years</p>
+
+    <div class="row gy-4">
+      <div class="col-md-4">
+        <div class="counter-box glass-card p-4">
+          <h2 class="counter display-4 fw-bold" data-target="4000">4000+</h2>
+          <p class="counter-label text-muted">🎓 Students Trained</p>
+        </div>
       </div>
-    </div>
-    <div class="col-md-4">
-      <div class="counter-box">
-        <h2 class="counter" data-target="200">200</h2>
-        <p class="counter-label">Hiring Partners</p>
+      <div class="col-md-4">
+        <div class="counter-box glass-card p-4">
+          <h2 class="counter display-4 fw-bold" data-target="200">200+</h2>
+          <p class="counter-label text-muted">🤝 Hiring Partners</p>
+        </div>
       </div>
-    </div>
-    <div class="col-md-4">
-      <div class="counter-box">
-        <h2 class="counter" data-target="10">10</h2>
-        <p class="counter-label">Years of Excellence</p>
+      <div class="col-md-4">
+        <div class="counter-box glass-card p-4">
+          <h2 class="counter display-4 fw-bold" data-target="10">10+</h2>
+          <p class="counter-label text-muted">🏆 Years of Excellence</p>
+        </div>
       </div>
     </div>
   </div>
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const counters = document.querySelectorAll(".counter");
+
+    counters.forEach(counter => {
+      counter.innerText = "0";
+      const updateCounter = () => {
+        const target = +counter.getAttribute("data-target");
+        const count = +counter.innerText;
+        const increment = Math.ceil(target / 100);
+
+        if (count < target) {
+          counter.innerText = count + increment > target ? target : count + increment;
+          setTimeout(updateCounter, 20);
+        } else {
+          counter.innerText = target;
+        }
+      };
+
+      updateCounter();
+    });
+  });
+</script>
+
+</section>
+
 </section>
 <!-- script -->
 <script>
