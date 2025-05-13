@@ -546,57 +546,25 @@ img {
   }
 }
 /* contact */
-.contact-section {
-  max-width: 1100px;
-  margin: auto;
-}
-
-.section-title {
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-
-.highlight {
-  color: #007bff;
-}
-
-.section-subtitle {
-  font-size: 1.1rem;
-  color: #6c757d;
-}
-
-.contact-card {
+.white-box {
+  background: #fff;
+  border-radius: 16px;
   padding: 25px;
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease-in-out;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  color: #212529;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.contact-card:hover {
+.white-box:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
-.contact-card h5 {
-  font-weight: 600;
-  margin-bottom: 12px;
-  color: #1f1f1f;
-}
-
-.contact-card p {
-  margin: 0;
-  line-height: 1.6;
-  font-size: 0.95rem;
-}
-
-.contact-card a {
-  color: #007bff;
+.white-box a {
+  color: #212529;
   text-decoration: none;
 }
 
-.contact-card a:hover {
-  text-decoration: underline;
+.white-box a:hover {
+  color: #000;
 }
